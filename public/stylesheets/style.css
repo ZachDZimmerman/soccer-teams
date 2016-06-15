@@ -7,12 +7,19 @@ a {
   color: #00B7FF;
 }
 
-div {
+.flex {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+div {
+  width: auto;
+  height: 200px;
+
 }
 
 img {
     height: 250px;
-    width: 250px;
+    width: 350px;
 }

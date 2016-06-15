@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
         res.render('teams', {team: team});
     });
 
+
 });
 
 module.exports = router;

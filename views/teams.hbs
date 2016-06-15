@@ -1,8 +1,17 @@
-<p>
+<h1>
     Here are your teams
-</p>
-<div>
+</h1>
+
+<div class="flex">
     {{#each team}}
+    <div class="">
+
         <img src="{{this.image_url}}"/>
+        <p>Team ID: {{this.id}}</p>
+        <p>Key Player: {{this.player}}</p>
+        <p>Ranking: {{this.ranking}}</p>
+    </div>
     {{/each}}
 </div>
+
+<a href="/add">Add a Team</a>
