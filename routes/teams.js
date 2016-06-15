@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var knex = require('../db/knex');
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+    knex('team').select().then(function(team) {
+        res.render('teams', {team: team});
+    });
+
 });
 
 module.exports = router;
